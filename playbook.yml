@@ -2,16 +2,16 @@
 - hosts: targetservers
 
   tasks: 
-  - name: Check a command
-    command: date
+   - name: Check a command
+     command: date
 
-  - name: install httpd through yum
-    yum: httpd
-    state: present
+   - name: install httpd through yum
+     yum: httpd
+     state: present
 
-  - name: ping targetserver
-    ping: 
+   - name: ping targetserver
+     ping: 
 
-  - name: start the httpd service
-    service: start
-    state: present
+   - name: start the httpd service
+     service: start
+     state: present
