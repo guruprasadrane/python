@@ -4,14 +4,14 @@ all:
     jenkins:
       hosts:
         jenkin1:
-          ansible_host: 192.168.40.155
+          ansible_host: 192.168.40.160
           ansible_user: root
           ansible_ssh_pass: snsgsnsg
           ansible_connection: ssh
     targetservers:
       hosts:
         targetserver1:
-          ansible_host: 192.168.40.154
+          ansible_host: 192.168.40.170
           ansible_user: root
           ansible_ssh_pass: targetserver
           ansible_connection: ssh
